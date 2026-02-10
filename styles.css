@@ -1,0 +1,141 @@
+body {
+    font-family: "Palanquin", sans-serif;
+
+}
+
+.header-footer {
+    height: 128px;
+    background-color: rgba(231, 108, 31, 1);
+}
+
+.inner-header-logo-n-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    margin-left: 120px;
+    margin-right: 18px;
+}
+
+.header_logo_styling {
+    width: 92px;
+    height: 38px;
+}
+
+.burger_menu_styling {
+    width: 45px;
+    height: 35px;
+
+}
+
+.hero_background {
+    width: 100%;
+    height: 100vh;
+    object-fit: hidden;
+    /* width: webkit-fill-available; */
+}
+
+.logo_burger_overlay {
+    height: 160px;
+    border-radius: 72px;
+}
+
+.slogan_receptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 260px;
+}
+
+.logo_n_reception {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.burgerhouse_size {
+    width: 300px;
+    height: 75px;
+}
+
+.starReceptions_size {
+    width: 110px;
+    height: 32px;
+}
+
+.categorie_nr_1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(231, 108, 31, 1);
+}
+
+
+.catetorie_picture_size {
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+    height: 90px;
+}
+
+.catetorie_picture_size::before {
+    position: absolute;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    padding-left: 120px;
+}
+
+.menu_card {
+    margin: 16px;
+    width: 715px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: antiquewhite;
+}
+
+.menu_card_positions {
+    display: flex;
+    gap: 8px;
+    margin: 8px;
+
+}
+
+.veggie_mushroom_black_burger_img {
+    width: 180px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.meal_headline {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.meal_description {
+    font-size: 15px;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+}
+
+.added-amount-plus-btn {
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    color: rgba(231, 108, 31, 1);
+}

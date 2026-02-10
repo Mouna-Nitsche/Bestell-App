@@ -1,2 +1,6 @@
 /* File for general standard like the reset styles for body or * margin 0 
 This file should only contain standard styling, so you could use them in multiple projects.*/
+
+* {
+    margin: 0;
+}
