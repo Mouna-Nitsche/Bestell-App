@@ -19,7 +19,7 @@
             rel="stylesheet"
         />
     </head>
-    <body onload="">
+    <body onload="iterateDishes()">
         <header class="header-footer">
             <div id="outter-header" class="outter-header_style">
                 <div id="inner-header" class="inner-header-logo-n-menu">
@@ -44,6 +44,8 @@
                         alt="A picture various dishes to represent what is offered."
                         class="hero_background"
                     />
+                </div>
+                <div class="logo_burger_overlay_position">
                     <img
                         src="/assets/img/logo_burger.png"
                         alt="A Logo of an example burger"
@@ -79,36 +81,33 @@
                             class="catetorie_picture_size"
                         />
                     </div>
-                    <div>
+                    <div class="basket_heading">
                         <h2>Burger & Sandwiches</h2>
                     </div>
+                    <section id="basket_wrapper" class="basket_wrapper">
+                        <h2 class="basket_heading">Dein Warenkorb</h2>
+                        <div class="basket_details">
+                            <div>
+                                <p>1 x Meal name</p>
+                                <p>
+                                    <img src="/assets/icons/bin.png" alt="This is an Icon for an Trash Bin" class="trash_icon">
+                                    1+
+                                </p>
+                            </div>
+                            <div>
+                                <p>Price €</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <section class="menu_card">
-                <div class="menu_card_positions">
-                    <img
-                        src="/assets/img/veggie_mushroom_black_burger.jpg"
-                        alt="A picture of the veggie mushroom black burger"
-                        class="veggie_mushroom_black_burger_img"
-                    />
-                    <div id="meal_headline_n_description">
-                        <p class="meal_headline">
-                            Veggie mushroom black burger
-                        </p>
-                        <p class="meal_description">
-                            Mixed green salad, Tomatoes, Edamame,<br />
-                            Mushrooms
-                        </p>
-                    </div>
-                    <div class="price_state_add">
-                        <p class="price meal_headline">16,90€</p>
-                        <button class="added-amount-plus-btn">Added</button>
-                        <button class="added-amount-plus-btn">+</button>
-                    </div>
-                </div>
-            </section>
+            <section id="menu_card_wrapper" class="menu_card"></section>
         </main>
-        <footer class="header-footer"></footer>
+        <footer class="header-footer">
+            <p>2025 BurgerHouse</p>
+            <p>Imprint</p>
+            <p>Cookie Preferences</p>
+        </footer>
     </body>
     <script src="/scripts/db.js"></script>
     <script src="/scripts/script.js"></script>
