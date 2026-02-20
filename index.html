@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
             rel="stylesheet"
         />
     </head>
-    <body onload="iterateDishes()">
+    <body onload="iterateDishes(), displayBasket()">
         <header class="header-footer">
             <div id="outter-header" class="outter-header_style">
                 <div id="inner-header" class="inner-header-logo-n-menu">
@@ -72,8 +72,8 @@
                 </h1>
             </div>
             <!-- The following div should be a template and be repeated for other categories. -->
-            <div>
-                <div class="categorie_nr_1">
+            <div class="categorie_wrapper" id="categorie_wrapper">
+                <!-- <div class="categorie_nr_1">
                     <div>
                         <img
                             src="assets/img/burger.svg"
@@ -88,7 +88,7 @@
                         <h2 class="basket_heading">Dein Warenkorb</h2>
                         <div class="basket_details">
                             <div>
-                                <p>1 x Meal name</p>
+                                <p id="menu_basket"></p>
                                 <p>
                                     <img src="/assets/icons/bin.png" alt="This is an Icon for an Trash Bin" class="trash_icon">
                                     1+
@@ -99,7 +99,7 @@
                             </div>
                         </div>
                     </section>
-                </div>
+                </div> -->
             </div>
             <section id="menu_card_wrapper" class="menu_card"></section>
         </main>
@@ -110,6 +110,7 @@
         </footer>
     </body>
     <script src="/scripts/db.js"></script>
-    <script src="/scripts/script.js"></script>
     <script src="/scripts/template.js"></script>
+    <script src="/scripts/script.js"></script>
+
 </html>
