@@ -56,7 +56,10 @@ delivery fee number
 total number
 */
 
-const warenkorb = {
+//In cardItmes sollen alle Gerichte stehen die mit dem Plus hinzugefügt wurden.
+
+//Template-struktur für den Warenkorb?
+let warenkorb = {
     cardItmes:[],
 
     // calculation:{}
@@ -65,3 +68,7 @@ const warenkorb = {
     total: 0
 }
 
+console.log(warenkorb);
+
+console.log("total wert " + warenkorb.total)
+ 
