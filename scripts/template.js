@@ -42,14 +42,10 @@ function basketCard() {
                     <section id="basket_wrapper" class="basket_wrapper">
                         <h2 class="basket_heading">Dein Warenkorb</h2>
                         <div class="basket_details">
-                            <div>
-                                <p id="menu_basket"></p>
-                                <p>
-                                    <img src="/assets/icons/bin.png" alt="This is an Icon for an Trash Bin" class="trash_icon">
-                                </p>
+                            <div id="menu_basket">
                             </div>
                         </div>
-                        <div>
+                        <div class="basket_calculation">
                             <p>${warenkorb.subtotal}</p>
                             <p>${warenkorb.delivery_fee}</p>
                             <p>${warenkorb.total}</p>
@@ -60,3 +56,13 @@ function basketCard() {
 }
 
                                 // <p>${myDishes[Dishesindex].price}€</p>
+
+function generateSingleCardItem(item) {
+    return `
+            <div class="single_CardItem"> 
+                <span>${item.amount}x ${item.name}</span>
+                <span>${item.price} €</span>
+                <img src="/assets/icons/bin.png" class="trash_icon">
+            </div>
+        `;
+}
