@@ -6,28 +6,37 @@ const myDishes =
         name: "Veggie mushroom black burger",
         describtion: "Mixed green salad, Tomatoes, Edamame, Mushrooms",
         price: 16.9,
-        id: 1
+        id: 1,
+        amount: 1
     },
     {
         name: "All meat burger",
         describtion:
             "Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ souse",
         price: 16.9,
-        id: 2
+        id: 2,
+        amount: 1
     },
     {
         name: "Beef red burger",
         describtion: "Beef, Cheese, Tomatoes, Lettuce, Onion",
         price: 14.9,
-        id: 3
+        id: 3,
+        amount: 1
+
     },
     {
         name: "Big chicken burger",
         describtion: "Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper",
         price: 15.9,
-        id: 4
+        id: 4,
+        amount: 1
+
     },
 ];
+
+console.log(myDishes);
+
 
 let basketDishes = [
     {name:"x"}
@@ -60,7 +69,7 @@ total number
 
 //Template-struktur für den Warenkorb?
 let warenkorb = {
-    cardItmes:[],
+    cardItems:[],
 
     // calculation:{}
     subtotal: 42,
@@ -68,7 +77,7 @@ let warenkorb = {
     total: 0
 }
 
-console.log(warenkorb);
+console.log("DB Array: " + warenkorb.cardItems);
 
 console.log("total wert " + warenkorb.total)
  
