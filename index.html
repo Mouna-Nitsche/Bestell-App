@@ -24,12 +24,12 @@
             <div id="outter-header" class="outter-header_style">
                 <div id="inner-header" class="inner-header-logo-n-menu">
                     <img
-                        src="/assets/img/header_logo.png"
+                        src="./assets/img/header_logo.png"
                         alt="The Logo of the Bestell App / Burger House Logo. A takeaway bag with a fork inside and the restaurant name."
                         class="header_logo_styling"
                     />
                     <img
-                        src="/assets/img/burger_menu.png"
+                        src="./assets/img/burger_menu.png"
                         alt="An image with three vertical lines that looks like a Burger, that customers can use for navigation."
                         class="burger_menu_styling"
                     />
@@ -40,14 +40,14 @@
             <section class="hero">
                 <div class="hero_wrapper">
                     <img
-                        src="/assets/img/hero_background_pic.jpg"
+                        src="./assets/img/hero_background_pic.jpg"
                         alt="A picture various dishes to represent what is offered."
                         class="hero_background"
                     />
                 </div>
                 <div class="logo_burger_overlay_position">
                     <img
-                        src="/assets/img/logo_burger.png"
+                        src="./assets/img/logo_burger.png"
                         alt="A Logo of an example burger"
                         class="logo_burger_overlay"
                     />
@@ -56,12 +56,12 @@
             <div class="slogan_receptions">
                 <div class="logo_n_reception">
                     <img
-                        src="/assets/img/BurgerHouse.png"
+                        src="./assets/img/BurgerHouse.png"
                         alt="A Picture of the Burger House Logo."
                         class="burgerHouse_size"
                     />
                     <img
-                        src="/assets/img/star_receptions.png"
+                        src="./assets/img/star_receptions.png"
                         alt="This is a Picture of the star rating and number of receptions"
                         class="starReceptions_size"
                     />
@@ -73,35 +73,27 @@
             </div>
             <!-- The following div should be a template and be repeated for other categories. -->
             <div class="categorie_wrapper" id="categorie_wrapper">
-                <!-- <div class="categorie_nr_1">
-                    <div>
-                        <img
-                            src="assets/img/burger.svg"
-                            alt="a picture of a simple painted burger"
-                            class="catetorie_picture_size"
-                        />
-                    </div>
-                    <div class="basket_heading">
-                        <h2>Burger & Sandwiches</h2>
-                    </div>
-                    <section id="basket_wrapper" class="basket_wrapper">
-                        <h2 class="basket_heading">Dein Warenkorb</h2>
-                        <div class="basket_details">
-                            <div>
-                                <p id="menu_basket"></p>
-                                <p>
-                                    <img src="/assets/icons/bin.png" alt="This is an Icon for an Trash Bin" class="trash_icon">
-                                    1+
-                                </p>
-                            </div>
-                            <div>
-                                <p>Price €</p>
-                            </div>
-                        </div>
-                    </section>
-                </div> -->
             </div>
             <section id="menu_card_wrapper" class="menu_card"></section>
+
+            <dialog id="myDialog" class="myDialog">
+                <div id="dialog-header" class="dialog-header-class">
+                    <img
+                        src="./assets/img/close_icon.png"
+                        alt="Symbol to Close the Dialog"
+                        id="closing-button"
+                        class="closing_btn"
+                        onclick="closeOrderDialog()"
+                    />
+                </div>
+                <div id="dialog-main" class="dialog-main-style"></div>
+                    <div id="order_confirmation" class="dialog-order_confirmation">
+                        <img src="./assets/img/delivery_car.png" alt="This is an Image of an Delivery car" class="delivery_car">
+                        <p class="font_size_OC">Order confirmed!</p>
+                        <p class="font_size_dialog">Your food is on the way!</p>
+                    </div>
+                </div>
+            </dialog>
         </main>
         <footer class="header-footer">
             <p>2025 BurgerHouse</p>
@@ -109,8 +101,7 @@
             <p>Cookie Preferences</p>
         </footer>
     </body>
-    <script src="/scripts/db.js"></script>
-    <script src="/scripts/template.js"></script>
-    <script src="/scripts/script.js"></script>
-
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/template.js"></script>
+    <script src="./scripts/script.js"></script>
 </html>
