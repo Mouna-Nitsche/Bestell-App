@@ -4,7 +4,7 @@ function foodCard(Dishesindex) {
             <div id="menu_card-${Dishesindex}" class="menu_card_styling">
                 <div class="menu_card_positions">
                     <img
-                        src="/assets/img/veggie_mushroom_black_burger.jpg"
+                        src="./assets/img/veggie_mushroom_black_burger.jpg"
                         alt="A picture of the veggie mushroom black burger"
                         class="veggie_mushroom_black_burger_img"
                     />
@@ -46,23 +46,33 @@ function basketCard() {
                             </div>
                         </div>
                         <div class="basket_calculation">
-                            <p>${warenkorb.subtotal}</p>
-                            <p>${warenkorb.delivery_fee}</p>
-                            <p>${warenkorb.total}</p>
-                        </div>
+                        <div class="basket_calc_positioning">
+                            <div>
+                                <p>Subtoal </p>
+                                <p>Delivery fee </p>
+                                <p class="divider">Total </p>
+                            </div>
+                            <div>
+                                <p id="subtotal">0.00 €</p>
+                                <p id="delivery_fee">${warenkorb.delivery_fee} €</p>
+                                <p id="total_price" class="divider">0.00 €</p>
+                            </div>
+                            </div>
+                        <button id="buy_btn" class="buy_button added-amount-plus-btn" onclick="openOrderDialog()"></button>
                     </section>
                 </div>
             `;
 }
 
-                                // <p>${myDishes[Dishesindex].price}€</p>
 
 function generateSingleCardItem(item) {
     return `
-            <div class="single_CardItem"> 
-                <span>${item.amount}x ${item.name}</span>
-                <span>${item.price} €</span>
-                <img src="/assets/icons/bin.png" class="trash_icon">
+            <div class="basket_details">
+                <div class="single_CardItem"> 
+                    <span>${item.amount}x ${item.name}</span>
+                    <span>${item.price} €</span>
+                    <img src="./assets/icons/bin.png" class="trash_icon">
+                </div>
             </div>
-        `;
+            `;
 }
