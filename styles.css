@@ -174,16 +174,79 @@ h2 {
     padding: 0;
 }
 
+.basket_calc_positioning {
+    display: flex;
+    gap: 82px;
+    margin: 32px 16px;
+}
+
 .basket_details {
     padding: 8px;
     border-radius: 24px;
     color: black;
     background-color: rgba(253, 234, 220, 1);
+    margin: 16px;
+}
+
+.divider {
+    border-top: 3px solid white;
+    margin-top: 8px;
+}
+
+.buy_button {
+    font-size: large;
+    color: white;
+    background-color: rgba(231, 108, 31, 1);
+    border-radius: 8px;
+    border: none;
 }
 
 .trash_icon {
     width: 18px;
     height: 18px;
+}
+
+.dialog-header-class {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closing_btn {
+    height: 16px;
+    width: 16px;
+}
+
+.myDialog {
+    background-color: rgba(54, 53, 52, 1);
+    color: white;
+    max-width: 420px;
+    max-height: 280px;
+    border-radius: 16px;
+    border: none;
+    margin: auto;
+    padding: 46px;
+}
+
+.dialog-main-style {
+    display: flex;
+    justify-items: center;
+}
+
+
+.delivery_car {
+    height: 60px;
+    width: 80px;
+    /* Flips the image */
+    transform: scaleX(-1);
+}
+
+.font_size_OC {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.font_size_dialog {
+    font-size: 22px;
 }
 
 footer {
