@@ -38,15 +38,6 @@ const myDishes =
 console.log(myDishes);
 
 
-let basketDishes = [
-    {name:"x"}
-];
-
-        // {
- 
-        // }
-
-
 //array for the basket to display added dishes
 
 /* menu ist ein Objekt
@@ -72,7 +63,7 @@ let warenkorb = {
     cardItems:[],
 
     // calculation:{}
-    subtotal: 42,
+    subtotal: 0,
     delivery_fee: 4.99,
     total: 0
 }
