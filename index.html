@@ -11,6 +11,8 @@
         />
         <link rel="stylesheet" href="styles.css" />
         <link rel="stylesheet" href="styles/standard.css" />
+        <link rel="stylesheet" href="styles/responsive_design.css" />
+
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,16 +25,20 @@
         <header class="header-footer">
             <div id="outter-header" class="outter-header_style">
                 <div id="inner-header" class="inner-header-logo-n-menu">
-                    <img
-                        src="./assets/img/header_logo.png"
-                        alt="The Logo of the Bestell App / Burger House Logo. A takeaway bag with a fork inside and the restaurant name."
-                        class="header_logo_styling"
-                    />
-                    <img
-                        src="./assets/img/burger_menu.png"
-                        alt="An image with three vertical lines that looks like a Burger, that customers can use for navigation."
-                        class="burger_menu_styling"
-                    />
+                    <div>
+                        <img
+                            src="./assets/img/header_logo.png"
+                            alt="The Logo of the Bestell App / Burger House Logo. A takeaway bag with a fork inside and the restaurant name."
+                            class="header_logo_styling"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="./assets/img/burger_menu.png"
+                            alt="An image with three vertical lines that looks like a Burger, that customers can use for navigation."
+                            class="burger_menu_styling"
+                        />
+                    </div>
                 </div>
             </div>
         </header>
@@ -55,21 +61,27 @@
             </section>
             <div class="slogan_receptions">
                 <div class="logo_n_reception">
-                    <img
-                        src="./assets/img/BurgerHouse.png"
-                        alt="A Picture of the Burger House Logo."
-                        class="burgerHouse_size"
-                    />
-                    <img
-                        src="./assets/img/star_receptions.png"
-                        alt="This is a Picture of the star rating and number of receptions"
-                        class="starReceptions_size"
-                    />
+                    <div>
+                        <img
+                            src="./assets/img/BurgerHouse.png"
+                            alt="A Picture of the Burger House Logo."
+                            class="burgerHouse_size"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="./assets/img/star_receptions.png"
+                            alt="This is a Picture of the star rating and number of receptions"
+                            class="starReceptions_size"
+                        />
+                    </div>
                 </div>
-                <h1>
-                    The best of Burgers, Pizza, and Greens, all in one great
-                    place.
-                </h1>
+                <div class="slogan_text">
+                    <h1>
+                        The best of Burgers, Pizza, and Greens, all in one great
+                        place.
+                    </h1>
+                </div>
             </div>
             <!-- The following div should be a template and be repeated for other categories. -->
             <div class="categorie_wrapper" id="categorie_wrapper">
@@ -82,7 +94,7 @@
                         src="./assets/img/close_icon.png"
                         alt="Symbol to Close the Dialog"
                         id="closing-button"
-                        class="closing_btn"
+                        class="closing_btn pointer"
                         onclick="closeOrderDialog()"
                     />
                 </div>
@@ -100,6 +112,14 @@
             <p>Imprint</p>
             <p>Cookie Preferences</p>
         </footer>
+        <nav class="nav-mobile nav-desktop"></nav>
+            <div class="nav_basket nav-desktop">
+                <img src="./assets/img/home.png" alt="A Picture of an home Symbol to open your home." srcset="">
+                <img src="./assets/img/profile.png" alt="A Picture of an profile Symbol to open your profile." srcset="">
+                <img src="./assets/img/orders.png" alt="A Picture of an orders Symbol to open your orders." srcset="">
+                <img src="./assets/img/nav_basket.png" alt="A Picture of an basket Symbol to open your basket." onclick="openOrderDialog()">
+            </div>
+        </nav>
     </body>
     <script src="./scripts/db.js"></script>
     <script src="./scripts/template.js"></script>

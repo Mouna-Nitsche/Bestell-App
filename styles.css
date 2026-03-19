@@ -3,8 +3,13 @@ body {
 
 }
 
+.pointer {
+    cursor: pointer;
+}
+
+
 .header-footer {
-    height: 128px;
+    height: 112px;
     background-color: rgba(231, 108, 31, 1);
 }
 
@@ -14,12 +19,12 @@ body {
     align-items: center;
     padding-top: 40px;
     margin-left: 120px;
-    margin-right: 18px;
+    margin-right: 20px;
 }
 
 .header_logo_styling {
-    width: 92px;
-    height: 38px;
+    width: 86px;
+    height: 36px;
 }
 
 .burger_menu_styling {
@@ -31,8 +36,9 @@ body {
 .hero_background {
     width: 100%;
     height: 70vh;
-    object-fit: hidden;
-    /* width: webkit-fill-available; */
+    object-fit: cover;
+    object-view-box: inset(20% 0 0 0);
+
 }
 
 .logo_burger_overlay_position {
@@ -83,14 +89,15 @@ h1 {
     display: flex;
     justify-content: center;
     background-color: rgba(231, 108, 31, 1);
+    height: 60px;
 }
 
 
 .catetorie_picture_size {
     display: flex;
     position: absolute;
-    bottom: 8px;
-    height: 90px;
+    bottom: 0px;
+    height: 80px;
 }
 
 .catetorie_picture_size::before {
@@ -99,13 +106,17 @@ h1 {
 
 h2 {
     color: white;
-    font-size: 40px;
-    padding-left: 120px;
+    font-size: 28px;
+    padding-left: 105px;
+}
+
+.menu_card {
+    height: 700px;
 }
 
 .menu_card_styling {
-    margin: 16px;
-    width: 720px;
+    margin: 18px;
+    width: 672px;
     height: 140px;
     border-radius: 8px;
     background-color: antiquewhite;
@@ -114,11 +125,18 @@ h2 {
 
 .menu_card_positions {
     display: flex;
-    gap: 8px;
+    gap: 28px;
     margin: 8px;
-
 }
 
+.menu_details {
+    display: flex;
+    padding-top: 8px;
+}
+
+.meal_headline_n_description {
+    width: 290px;
+}
 
 .veggie_mushroom_black_burger_img {
     width: 180px;
@@ -137,19 +155,23 @@ h2 {
     font-size: 15px;
 }
 
-.price {
+.price_state_add {
+    margin-bottom: 32px;
+    margin-left: 20px;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 32px;
+    align-items: flex-end;
+    flex-direction: column;
+    row-gap: 40px;
 }
 
 .added-amount-plus-btn {
     background-color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 16px;
     color: rgba(231, 108, 31, 1);
     font-size: 16px;
-    padding: 6px;
+    padding: 8px;
 }
 
 
@@ -161,17 +183,57 @@ h2 {
 
     right: 0;
     width: 360px;
-    height: 700px;
+    height: 668px;
     border-radius: 24px 0px 0px 24px;
     color: white;
     background-color: rgba(54, 53, 52, 1);
 }
 
 .basket_heading {
-    margin-top: 42px;
+    margin-top: 22px;
     margin-bottom: 24px;
     font-size: 20px;
     padding: 0;
+}
+
+.slogan_headline {
+    font-size: 20px;
+}
+
+.category_heading {
+    display: none;
+}
+
+.empty_basket_message_n_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.empty_basket_message {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.empty_basket_img {
+    width: 112px;
+    height: 112px;
+}
+
+.menus_basket_card {
+    width: 290px;
+    height: 316px;
+    overflow: auto;
+
+}
+
+.basket_card_calc {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
 }
 
 .basket_calc_positioning {
@@ -180,12 +242,25 @@ h2 {
     margin: 32px 16px;
 }
 
-.basket_details {
-    padding: 8px;
+.single_CardItem {
+    max-width: 230px;
+    padding: 10px;
     border-radius: 24px;
     color: black;
     background-color: rgba(253, 234, 220, 1);
     margin: 16px;
+
+}
+
+.basket_card_right {
+    display: flex;
+    justify-content: space-between;
+    justify-items: flex-end;
+}
+
+.card_price {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .divider {
@@ -197,8 +272,9 @@ h2 {
     font-size: large;
     color: white;
     background-color: rgba(231, 108, 31, 1);
-    border-radius: 8px;
+    border-radius: 16px;
     border: none;
+    width: 200px;
 }
 
 .trash_icon {
@@ -214,6 +290,13 @@ h2 {
 .closing_btn {
     height: 16px;
     width: 16px;
+}
+
+.dialog-order_confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .myDialog {
@@ -247,6 +330,11 @@ h2 {
 
 .font_size_dialog {
     font-size: 22px;
+}
+
+
+.nav-desktop {
+    display: none;
 }
 
 footer {
