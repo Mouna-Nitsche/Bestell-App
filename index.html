@@ -22,7 +22,7 @@
         />
     </head>
     <body onload="iterateDishes(), displayBasket()">
-        <header class="header-footer">
+        <header class="header-footer header_rd">
             <div id="outter-header" class="outter-header_style">
                 <div id="inner-header" class="inner-header-logo-n-menu">
                     <div>
@@ -114,10 +114,10 @@
         </footer>
         <nav class="nav-mobile nav-desktop"></nav>
             <div class="nav_basket nav-desktop">
-                <img src="./assets/img/home.png" alt="A Picture of an home Symbol to open your home." srcset="">
-                <img src="./assets/img/profile.png" alt="A Picture of an profile Symbol to open your profile." srcset="">
-                <img src="./assets/img/orders.png" alt="A Picture of an orders Symbol to open your orders." srcset="">
-                <img src="./assets/img/nav_basket.png" alt="A Picture of an basket Symbol to open your basket." onclick="openOrderDialog()">
+                <img src="./assets/img/home.png" alt="A Picture of an home Symbol to open your home." class="pointer">
+                <img src="./assets/img/profile.png" alt="A Picture of an profile Symbol to open your profile." class="pointer">
+                <img src="./assets/img/orders.png" alt="A Picture of an orders Symbol to open your orders." class="pointer">
+                <img src="./assets/img/nav_basket.png" alt="A Picture of an basket Symbol to open your basket." onclick="toggleBasket()" class="pointer">
             </div>
         </nav>
     </body>

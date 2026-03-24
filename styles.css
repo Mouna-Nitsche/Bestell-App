@@ -7,6 +7,9 @@ body {
     cursor: pointer;
 }
 
+.d-none {
+    display: block !important;
+}
 
 .header-footer {
     height: 112px;
@@ -224,10 +227,18 @@ h2 {
 
 .menus_basket_card {
     width: 290px;
-    height: 316px;
-    overflow: auto;
-
+    max-height: 316px;
+    overflow-y: auto;
 }
+
+#menus_basket_card::-webkit-scrollbar {
+    /* width: 4px;
+    height: 40px;
+    background-color: rgba(253, 234, 220, 1); */
+    /* Schmaler als der Standard */
+    /* overflow-y: auto; */
+}
+
 
 .basket_card_calc {
     display: flex;
@@ -251,6 +262,7 @@ h2 {
     margin: 16px;
 
 }
+
 
 .basket_card_right {
     display: flex;

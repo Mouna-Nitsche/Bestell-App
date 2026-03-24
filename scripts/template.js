@@ -1,5 +1,5 @@
 function foodCard(Dishesindex) {
-    //if there is 1 or more coment
+    // Displayed food Card with price, description and Add button
     return `
             <div id="menu_card-${Dishesindex}" class="menu_card_styling">
                 <div class="menu_card_positions">
@@ -28,6 +28,7 @@ function foodCard(Dishesindex) {
 }
 
 function basketCard() {
+    // Category and basket Calculation
     return  `
                 <div class="categorie_nr_1">
                     <div>
@@ -56,6 +57,7 @@ function basketCard() {
 }
 
 function generateSingleCardItem(item, i) {
+    // dishes in the basket called CardItems
     return `
                 <div class="single_CardItem">
                     <div class="basket_card_left"> 
@@ -71,6 +73,7 @@ function generateSingleCardItem(item, i) {
 
 
 function basketCalculation() {
+    // Calculation all CardItem and buy button
     return `
                     <div class="basket_calc_positioning">
                         <div>
@@ -88,6 +91,5 @@ function basketCalculation() {
 
             `;
 }
-
 
 // onclick="deleteCardItem(${item})

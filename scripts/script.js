@@ -39,7 +39,6 @@ function search_Generate_Dish(Dishesindex) {
         amount: myDishes[Dishesindex].amount
     };
     warenkorb.cardItems.push(choosenMenu)
-    console.log("Gewählten Menus in CardItmes:" + warenkorb.cardItems);
     }
 }
 
@@ -68,17 +67,17 @@ function emptyBasketCard(){
 }
 
 function renderBasketCardItem() {
-        let menus_basket_cardRef = document.getElementById("menus_basket_card");
-        let basket_card_calcRef = document.getElementById("basket_card_calc");
+    let menus_basket_cardRef = document.getElementById("menus_basket_card");
+    let basket_card_calcRef = document.getElementById("basket_card_calc");
 
-        //no duplicates
-        menus_basket_cardRef.innerHTML = "";
+    //no duplicates
+    menus_basket_cardRef.innerHTML = "";
 
-        //Überprüfen Warenkorb nicht leer, Bedingung um die Berechnung der Items auszuführen
+    //Überprüfen Warenkorb nicht leer, Bedingung um die Berechnung der Items auszuführen
 
-        let subtotal_sum = 0;
+    let subtotal_sum = 0;
 
-        for (let i = 0; i < warenkorb.cardItems.length; i++) {
+    for (let i = 0; i < warenkorb.cardItems.length; i++) {
         let item = warenkorb.cardItems[i];
 
 
@@ -87,8 +86,8 @@ function renderBasketCardItem() {
         let subtotal_item_calc = item.amount * item.price;
         subtotal_sum += subtotal_item_calc;        
 
-        console.log(warenkorb.subtotal);
-        console.log(warenkorb.cardItems[i]);
+    console.log(warenkorb.subtotal);
+    console.log(warenkorb.cardItems[i]);
 
     }
 
@@ -113,14 +112,37 @@ function removeFromBasket(i) {
     renderBasketCardItem();
 }
 
+function openOrderDialog() {
+    let menus_basket_cardRef = document.getElementById("menus_basket_card")
+    let basket_card_calcRef = document.getElementById("basket_card_calc");
+
+    menus_basket_cardRef.innerHTML = "";
+    basket_card_calcRef.innerHTML = "";
+
+    emptyBasketCard()
+    warenkorb.cardItems = [];
+
+    const dialogRef = document.getElementById("myDialog");
+    dialogRef.showModal();
+
+    // displayBasket()
+    // resetBasketTotals(subtotal, total_price, buy_btn)
+}
+
+function toggleBasket() {
+    let basket = document.getElementById('basket_wrapper'); // ID deines Warenkorb-Divs
+    basket.classList.toggle('d-none');
+}
+
+
 function resetBasketTotals(subtotal, total_price, buy_btn) {
     //resetting displayed values
     subtotal = 0;
     total_price = 0;
     buy_btn = 0;
     //resetting db values
-    warenkorb.subtotal && warenkorb.total == 0;
-
+    // warenkorb.subtotal && warenkorb.total == 0;
+    //reset calculated values
 
     document.getElementById("subtotal").innerHTML = subtotal.toFixed(2) + " €";
     document.getElementById("total_price").innerHTML = total_price.toFixed(2) + " €";
@@ -128,15 +150,6 @@ function resetBasketTotals(subtotal, total_price, buy_btn) {
     
 }
 
-
-function openOrderDialog() {
-    let menus_basket_cardRef = document.getElementById("menus_basket_card")
-    menus_basket_cardRef.innerHTML = "";
-
-    const dialogRef = document.getElementById("myDialog");
-    dialogRef.showModal();
-    resetBasketTotals(subtotal, total_price, buy_btn)
-}
 
 function closeOrderDialog() {
     const dialogRef = document.getElementById("myDialog");
