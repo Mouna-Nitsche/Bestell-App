@@ -62,7 +62,7 @@ function emptyBasketCard(){
                                                 </div>`;
             
                                                         
-            return; //Funktion abbrechen
+            return;
         }  
 }
 
@@ -86,15 +86,11 @@ function renderBasketCardItem() {
         let subtotal_item_calc = item.amount * item.price;
         subtotal_sum += subtotal_item_calc;        
 
-    console.log(warenkorb.subtotal);
-    console.log(warenkorb.cardItems[i]);
-
     }
 
     let final_total = subtotal_sum + warenkorb.delivery_fee
     warenkorb.total = final_total;
 
-        // kürzen mit template?
     basket_card_calcRef.innerHTML = basketCalculation();
     document.getElementById("subtotal").innerHTML = subtotal_sum.toFixed(2) + " €";
     document.getElementById("total_price").innerHTML = final_total.toFixed(2) + " €";
@@ -125,18 +121,18 @@ function openOrderDialog() {
     const dialogRef = document.getElementById("myDialog");
     dialogRef.showModal();
 
-    // displayBasket()
-    // resetBasketTotals(subtotal, total_price, buy_btn)
+
 }
 
 function toggleBasket() {
-    let basket = document.getElementById('basket_wrapper'); // ID deines Warenkorb-Divs
+    let basket = document.getElementById('basket_wrapper');
     basket.classList.toggle('d-none');
 }
 
 
 function resetBasketTotals(subtotal, total_price, buy_btn) {
     //resetting displayed values
+    //delete values in the next coding session
     subtotal = 0;
     total_price = 0;
     buy_btn = 0;

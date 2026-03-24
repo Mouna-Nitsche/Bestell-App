@@ -91,5 +91,3 @@ function basketCalculation() {
 
             `;
 }
-
-// onclick="deleteCardItem(${item})

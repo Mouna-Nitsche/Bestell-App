@@ -158,7 +158,7 @@
         height: 60px;
         width: 60px;
         bottom: 44px;
-        left: 288px;
+        left: 132px;
     }
 
     .responsive-style {
@@ -259,5 +259,24 @@
         height: 342px;
         object-fit: cover;
         border-radius: 16px;
+    }
+
+    .basket_details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menus_basket_card {
+        width: 224px;
+    }
+
+    .basket_heading {
+        margin-bottom: 16px;
+    }
+
+    .basket_calc_positioning {
+        gap: 64px;
     }
 }

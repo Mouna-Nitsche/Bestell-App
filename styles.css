@@ -231,14 +231,6 @@ h2 {
     overflow-y: auto;
 }
 
-#menus_basket_card::-webkit-scrollbar {
-    /* width: 4px;
-    height: 40px;
-    background-color: rgba(253, 234, 220, 1); */
-    /* Schmaler als der Standard */
-    /* overflow-y: auto; */
-}
-
 
 .basket_card_calc {
     display: flex;
@@ -331,7 +323,7 @@ h2 {
 .delivery_car {
     height: 60px;
     width: 80px;
-    /* Flips the image */
+    /* flips the image */
     transform: scaleX(-1);
 }
 
